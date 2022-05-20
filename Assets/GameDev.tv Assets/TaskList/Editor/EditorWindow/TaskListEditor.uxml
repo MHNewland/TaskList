@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="TaskListEditor.uss" />
+    <ui:VisualElement name="CreatingList" class="Container" style="flex-wrap: nowrap;">
+        <ui:TextField picking-mode="Ignore" label="List Name" text="list name..." name="NewListName" />
+        <ui:Button text="Make New List" display-tooltip-when-elided="true" name="NewListButton" class="Button" />
+    </ui:VisualElement>
+    <ui:VisualElement name="LoadingTasks" class="LoadingTaskContainer Container">
+        <uie:ObjectField label="Load Saved tasks" name="SavedTasksObjectField" />
+        <ui:Button text="Load Tasks" display-tooltip-when-elided="true" name="LoadTasksButton" class="Button" />
+    </ui:VisualElement>
+    <ui:VisualElement name="AddingTasks" class="AddingTaskContainer Container" style="flex-direction: row; flex-wrap: wrap;">
+        <ui:Label text="Add New Task" display-tooltip-when-elided="true" name="AddTasksHeader" class="Header" />
+        <ui:TextField picking-mode="Ignore" text="add task..." name="TaskText" style="width: 75%;" />
+        <ui:Button text="Add" display-tooltip-when-elided="true" name="AddTaskButton" class="AddTasksButton" style="width: 50px; height: 25px; background-color: rgb(71, 130, 61);" />
+    </ui:VisualElement>
+    <ui:VisualElement name="SearchContainer" class="Container">
+        <ui:Label text="Search" display-tooltip-when-elided="true" name="SearchHeader" class="Header" />
+        <uie:ToolbarSearchField focusable="true" name="TaskSearchBox" />
+    </ui:VisualElement>
+    <ui:VisualElement name="DisplayingTasks" class="CurrentTaskContainer Expand Container">
+        <ui:Label text="Current Tasks" display-tooltip-when-elided="true" name="CurrentTasksHeader" class="Header" />
+        <ui:ScrollView name="TaskList" class="TaskListContainer Border Expand" />
+    </ui:VisualElement>
+    <ui:VisualElement name="ProgressContainer" class="Container">
+        <ui:VisualElement name="ProgressButtonContainer" style="flex-direction: row; justify-content: space-around;">
+            <ui:Button text="Save Progress" display-tooltip-when-elided="true" name="SaveProgressButton" class="Button" style="width: 45%;" />
+            <ui:Button text="Remove Completed &#10;Tasks" display-tooltip-when-elided="true" name="RemoveCompleted" class="Button" style="width: 45%;" />
+        </ui:VisualElement>
+        <ui:Label text="Progress" display-tooltip-when-elided="true" name="ProgressHeader" class="Header" />
+        <ui:VisualElement name="TaskProgressContainer">
+            <ui:ProgressBar title="---%" name="TaskProgress" high-value="1" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

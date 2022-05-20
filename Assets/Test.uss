@@ -1,0 +1,82 @@
+.header {
+    color: rgb(236, 24, 24);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(4, 34, 255);
+}
+
+.toggle {
+}
+
+.toggle:checked {
+    background-color: rgb(255, 0, 0);
+}
+
+.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headerTest {
+    color: rgb(236, 24, 24);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(4, 34, 255);
+    width: 75px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
+}
+
+.containerTest {
+    width: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-left-color: rgb(78, 238, 53);
+    border-right-color: rgb(78, 238, 53);
+    border-top-color: rgb(78, 238, 53);
+    border-bottom-color: rgb(78, 238, 53);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.parent {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
